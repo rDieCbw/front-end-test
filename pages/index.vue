@@ -65,7 +65,7 @@ const axios = require('axios');
     methods: {
       getEmployees() {
         var self = this;
-        axios.get('http://dummy.restapiexample.com/api/v1/employees')
+        axios.get('https://dummy.restapiexample.com/api/v1/employees')
           .then(function (response) {
             var employeesRequest = response.data.data.map((employee) => {
               employee.progress = 0;
