@@ -56,6 +56,20 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    // [
+    //   '~/node_modules/firebase',
+    //   {
+    //     config: {
+    //       apiKey: "AIzaSyD8B5Oc-rDbgXH_Z_cLkMfoiQfjkZ_W88g",
+    //       authDomain: "test-front-anima.firebaseapp.com",
+    //       databaseURL: "https://test-front-anima.firebaseio.com",
+    //       projectId: "test-front-anima",
+    //       storageBucket: "test-front-anima.appspot.com",
+    //       messagingSenderId: "1025314244601",
+    //       appId: "1:1025314244601:web:ef9ec90f6d6fad67d6df28"
+    //     },
+    //   }
+    // ]
   ],
   /*
   ** Axios module configuration
@@ -88,6 +102,6 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
-   
+    extractCSS: true,
   }
 }
