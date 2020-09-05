@@ -1,0 +1,155 @@
+.sidebar{
+    background-color: #059D42 !important;
+    .v-list-item{
+        background-color: #059D42 !important;
+        color: white !important
+    }
+    .v-subheader{
+        color: #93FFE8 !important; 
+    }
+}
+.topbar{
+    background-color: #059D42 !important;
+    .v-toolbar__content{
+        width: 100%;
+    }
+    .mdi-menu{
+        color: white !important;
+    }
+}
+.v-main{
+    padding-top: 29px !important;
+    &__wrap{
+        padding: 0 36px;
+    }
+    .employee-card{
+        background: #FFFFFF;
+        box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.15);
+        margin: 46px 0;
+        padding: 21px;
+        position: relative;
+        .v-avatar{
+            margin-right: 24px;
+        }
+        .status-badge{
+            position: absolute;
+            right: -16px;
+            top: -17px;
+            padding: 6px 16px;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            img{
+                margin-right: 9px;
+            }
+            .value{
+                margin-left: 9px;
+            }
+        }
+        .progress-bar {
+            position: relative;
+            height: 25px;
+            background: #E9E9E9;
+            margin: 24px 0;
+            border-radius: 22px;
+            flex-basis: 97%;
+            flex-grow: unset;
+            .progress-max{
+                position: absolute;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                height: 25px;
+                right: -3%;
+                bottom: 100%;
+                color: #778489;
+                padding: 0 8px;
+            }
+            .progress{
+                position: absolute;
+                height: 25px;
+                left: 0;
+                top: 0;
+                background-color: #059D42;
+                border-radius: 22px;
+                width: 100%;
+            }
+            .progress-value{
+                position: absolute;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                height: 25px;
+                left: 0;
+                top: 0;
+                color: rgba(0, 0, 0, 0.7);
+                padding: 0 8px;
+            }
+        }
+        button {
+            max-width: 330px !important;
+            color: #059D42 !important;
+            img{
+                margin-right: 9px;
+            }
+        }
+    }
+}
+.loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    color: #059D42;
+    font-size: 30px;
+    text-align: center;
+}
+.v-dialog{
+    .v-card__title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #059D42;
+        color: white;
+    }
+    .layout{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .add-money-button{
+            background-color: #D4E4DB !important;
+            font-weight: 900;
+            font-size: 28.3666px;
+            line-height: 36px;
+            text-align: center;
+            color: #059D42;
+            width: 212px;
+            padding: 30px 69px;
+            margin: 24px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 960px){
+    h1{
+        margin-top: 30px;
+    }
+    .employee-card{
+        button{
+            font-size: 11px;
+        }
+    }
+    .v-dialog{
+        .v-card__title{
+            font-size: 14px!important;
+            padding: 8px 16px;
+        }
+        .add-money-button{
+            width: 130px !important;
+            padding: 15px 30px !important;
+            font-size: 20px !important;
+        }
+    }
+}
