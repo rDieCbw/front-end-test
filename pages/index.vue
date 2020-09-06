@@ -94,9 +94,8 @@ const axios = require('axios');
         } 
       },
       showModalMoney(employee_id) {
-        //THIS IS NOT WORKING
-        this.addMoneyDialog = true;
         this.setContexEmployeeIndex(employee_id);
+        this.addMoneyDialog = true;
         console.log(this.employees[this.contextEmployeeIndex].employee_name)
       },
       addMoney(value) {
@@ -110,8 +109,8 @@ const axios = require('axios');
         for (let i = 0, j = this.employees.length; i < j; i++) {
           if(this.employees[i].id == employee_id){
             this.contextEmployeeIndex = i;
+            break;
           }
-          break;
         }
       }
     },
